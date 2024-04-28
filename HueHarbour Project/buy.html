@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>buy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar fixed-top">
+        <a class="navbar-brand" href="index.html">HueHarbour</a>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" id="buy-link" href="buy.html">buy</a></li>
+            <li class="nav-item">
+                <div class="search-bar">
+                    <input type="text" id="search-input">
+                    <button id="search-button">
+                        <svg id="search-svg" xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#452902}</style><path d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"/></svg>
+                    </button>
+                </div>
+            </li>
+         
+
+          <li class="nav-item"><a class="nav-link" href="galleries.html">galleries</a></li>
+          <li class="nav-item"><a class="nav-link" id="cart-link" href="#">cart</a></li>
+          <li class="nav-item"><a class="nav-link" href="login.html">login</a></li>
+        </ul>
+      </nav>
+    
+      <div id="content">
+        <div id="buy-page" class="page">
+            <div class="sorting">
+                <label for="sort-options">sort by price:</label>
+                <select id="sort-options" class="custom-select">
+                  <option value="low-to-high">low to high</option>
+                  <option value="high-to-low">high to low</option>
+                </select>
+              </div>
+              
+            <div class="grid-container" id="buy-grid">
+            </div>
+        </div>
+        <div id="cart-page" class="page">
+
+            <div id="cart-items">
+            </div>
+            <div id="cart-total">
+                
+                <p>Total:   ₹<span id="total-amount">0</span><p>
+                <button id="checkout-btn">proceed to pay</button>
+                
+            </div>
+            
+           
+        </div>
+    </div>
+    <footer>developed by Pushpendra</footer>
+    <script src="script.js"></script>
+</body>
+</html>
